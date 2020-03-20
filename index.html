@@ -1,14 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AQI TU'LP</title>
-</head>
-<body>
-    <div>
-        <h2>AQI Site SCI@TU'LP </h2>
-        <p>dev : aw.dev</p>
-    <div>
-</body>
+<html>
+   <head>
+      <title>Creating MySQL Tables</title>
+   </head>
+   
+   <body>
+      <?php
+         $dbhost = 'remotemysql.com:3036';
+         $dbuser = 'LjQxrijy4W;
+         $dbpass = '3ZK0P2JsX8';
+         $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+         
+         if(! $conn ) {
+            die('Could not connect: ' . mysqli_error());
+         }
+         echo 'Connected successfully<br />';
+         $sql = "CREATE TABLE tutorials_tbl( ".
+            "tutorial_id INT NOT NULL AUTO_INCREMENT, ".
+            "tutorial_title VARCHAR(100) NOT NULL, ".
+            "tutorial_author VARCHAR(40) NOT NULL, ".
+            "submission_date DATE, ".
+            "PRIMARY KEY ( tutorial_id )); ";
+         mysqli_select_db( 'TUTORIALS' );
+         $retval = mysqli_query( $sql, $conn );
+         
+         if(! $retval ) {
+            die('Could not create table: ' . mysqli_error());
+         }
+         echo "Table created successfully\n";
+         mysqli_close($conn);
+      ?>
+   </body>
 </html>
