@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Heading */
+.h1 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+/* Date */
+.text-date {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+/* Text AQI */
+.aqi .text-aqi {
+  position: absolute;
+  top: 32%;
+  right: 30%;
+  font-size: 8.5rem;
+}
+
+/* Img - balloon*/
+.balloon {
+  box-sizing: border-box;
+  width: 500px;
+  height: auto;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .h1 {
+    font-size: 1.8rem;
+  }
+  .h3 {
+    font-size: 1.1rem;
+  }
+  /* Img - balloon*/
+  .balloon {
+    box-sizing: border-box;
+    width: 400px;
+    height: auto;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .h1 {
+    font-size: 2.75rem;
+  }
+  .h3 {
+    font-size: 1.35rem;
+  }
+
+  /* Img - balloon*/
+  .balloon {
+    box-sizing: border-box;
+    width: 480px;
+    height: auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .h1 {
+    font-size: 2.8rem;
+  }
+  .h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .h1 {
+    font-size: 3.1rem;
+  }
+  .h3 {
+    font-size: 1.55rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .h1 {
+    font-size: 3.5rem;
+  }
+  .h3 {
+    font-size: 1.75rem;
+  }
+}
