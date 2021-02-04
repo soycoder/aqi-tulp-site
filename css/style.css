@@ -56,6 +56,12 @@ body {
     width: 400px;
     height: auto;
   }
+
+  /* Text AQI */
+  .aqi .text-aqi {
+    top: 30%;
+    right: 24%;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -82,6 +88,11 @@ body {
   }
   .h3 {
     font-size: 1.4rem;
+  }
+
+  /* Text AQI */
+  .aqi .text-aqi {
+    font-size: 10rem;
   }
 }
 
