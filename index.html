@@ -11,8 +11,9 @@
   integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 <link rel="stylesheet" href="css/style.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<script src="js/utils.js" ></script>
+<script src="js/utils.js"></script>
+
+
 
 <body class="bg-light">
 
@@ -28,33 +29,54 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
+        <div class="row">
+          <div id="circle-balloon" class="aqi circle" style="float:none;margin:auto;">
+            <img src="img/balloon/US-AQI.png" class="balloon">
 
-        <img src="img/balloon/green-3x.png" class="balloon center">
-        <div class="aqi">
-          <div class="text-aqi">20</div>
+            <div id="text-aqi" class="text-aqi">.</div>
+          </div>
         </div>
 
       </div>
-      <div class="col-lg-6">
-        <div class="pt-4 text-date text-center"> วัน พุธ ที่ 9 กันยายน พ.ศ.2563 </div>
-        <div class="text-date text-center">เวลา 17.50 น.</div>
+      <div class="col-lg-6" >
+        <div id="text-date-th" class="pt-4 text-date text-center">
+          <!-- วันเดือนปี -->
+        </div>
+        <div id="text-time" class="text-date text-center">
+          <!-- เวลา -->
+        </div>
 
-        <!-- Chart -->
-        <div>
-          <canvas id="canvas" style="display: block; height: 650px; width: 1301px;" width="2602" height="1300"
-            class="chartjs-render-monitor"></canvas>
-        </div><!-- Chart -->
+        <div class="text-forecast ">
+          📊การพยากรณ์
+          <img src="img/predict/223.png" class="img-forecast">
+          <div class="row">
+            <div id="time1" class="col text-center time-forecast">col</div>
+            <div id="time2" class="col text-center time-forecast">col</div>
+            <div id="time3" class="col text-center time-forecast">col</div>
+          </div>
+        </div>
+        
 
-        <br>
-        <button id="randomizeData">Randomize Data</button>
-        <button id="addDataset">Add Dataset</button>
-        <button id="removeDataset">Remove Dataset</button>
-        <button id="addData">Add Data</button>
-        <button id="removeData">Remove Data</button>
       </div>
     </div>
+    <div class="row text-center" style="width: 100%;">
+      <div id="text-meaning" class="text-center text-meaning " style="width: 100%;">
+        <!-- ความหมาย -->
+      </div>
+
+    </div>
+    <footer class="footer">
+
+      <img class="aqi-standard" src="img/balloon/AQI-standard.png">
+
+    </footer>
   </div><!-- Content -->
 
+
+
+  <script src="js/script.js"></script>
+  <script src="js/aqi.js"></script>
+  <script src="js/forecast.js"></script>
 
 
   <script>
