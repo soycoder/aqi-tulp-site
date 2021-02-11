@@ -107,8 +107,11 @@ img.aqi-standard {
   }
   
   .text-meaning{
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     -webkit-text-stroke: 1px black;
+  }
+  .time-forecast{
+    font-size: 1.1rem;
   }
 }
 
