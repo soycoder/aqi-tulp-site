@@ -34,6 +34,13 @@ var [fHour, sHour] = now1
   .split(":")[0]
   .split("");
 
+if(sHour>=9){
+  Text1.innerText = (parseInt(sHour) + 1) + ":00 น.";
+  Text2.innerText = (parseInt(sHour) + 2) + ":00 น.";
+  Text3.innerText = (parseInt(sHour) + 3) + ":00 น.";
+}
+else{
 Text1.innerText = fHour + "" + (parseInt(sHour) + 1) + ":00 น.";
 Text2.innerText = fHour + "" + (parseInt(sHour) + 2) + ":00 น.";
 Text3.innerText = fHour + "" + (parseInt(sHour) + 3) + ":00 น.";
+}
