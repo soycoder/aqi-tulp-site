@@ -20,12 +20,57 @@
   <!-- Header -->
   <div class="container-fluid">
     <div class="py-5 text-center">
-      <div class="h1">กำลังปรับปรุง ระบบหลังบ้าน</div>
-      <div class="h3">ขออภัยในความไม่สะดวก</div>
+      <div class="h1">สถานีตรวจวัดคุณภาพอากาศ</div>
+      <div class="h3">มหาวิทยาลัยธรรมศาสตร์ ศูนย์ลำปาง</div>
     </div>
   </div> <!-- Header -->
 
-  
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row">
+          <div id="circle-balloon" class="aqi circle" style="float:none;margin:auto;">
+            <img src="img/balloon/US-AQI.png" class="balloon">
+
+            <div id="text-aqi" class="text-aqi">.</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6" >
+        <div id="text-date-th" class="pt-4 text-date text-center">
+          <!-- วันเดือนปี -->
+        </div>
+        <div id="text-time" class="text-date text-center">
+          <!-- เวลา -->
+        </div>
+
+        <div class="text-forecast ">
+          📊การพยากรณ์
+          <img src="img/predict/433.png" class="img-forecast">
+          <div class="row">
+            <div id="time1" class="col text-center time-forecast"></div>
+            <div id="time2" class="col text-center time-forecast"></div>
+            <div id="time3" class="col text-center time-forecast"></div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+    <div class="row text-center" style="width: 100%;">
+      <div id="text-meaning" class="text-center text-meaning " style="width: 100%;">
+        <!-- ความหมาย -->
+      </div>
+
+    </div>
+    <footer class="footer">
+
+      <img class="aqi-standard" src="img/balloon/AQI-standard.png">
+
+    </footer>
+  </div><!-- Content -->
 
 
 
