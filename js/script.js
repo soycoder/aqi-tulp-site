@@ -1,4 +1,5 @@
-const now1 = new Date();
+// const now1 = new Date();
+const now1 = new Date(1620897094000);
 
 const date_TH = now1.toLocaleDateString("th-TH", {
   year: "numeric",
